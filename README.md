@@ -17,5 +17,12 @@ Implementing deep dream using pretrained Google Inception-v3
 Once you have your dependencies installed via pip, run the demo script in terminal via
 
 ```
-python deep_dream.py
+python deep_dream.py --image=<IMAGE_PATH> --layer=<LIST_OF_INCEPTION_LAYERS>
 ```
+
+Arguments:
+-i or --image 		The path of input image
+-l or --layers 		List of all layers of inception-v3 network to test for generating
+					deep dream images. eg.- mixed3a_pool_reduce_pre_relu, mixed4b_pool_reduce_pre_relu, etc.
+					Refer the file 'Inception_layers.txt' for names of layers in the
+					Inception-v3 architecture
